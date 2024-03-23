@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_sai143cool_Web_Resume_1711204292515
+  name: Build Web-Resume
+  orgIdentifier: default
+  projectIdentifier: FirstProject
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1711204235360
+        repoName: sai143cool/Web-Resume
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Docker
+        type: CI
