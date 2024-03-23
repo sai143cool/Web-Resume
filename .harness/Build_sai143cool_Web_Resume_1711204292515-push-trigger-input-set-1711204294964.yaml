@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_sai143cool_Web_Resume_1711204292515-push-trigger-input-set
+  identifier: Build_sai143cool_Web_Resume_1711204292515pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: FirstProject
+  pipeline:
+    identifier: Build_sai143cool_Web_Resume_1711204292515
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
