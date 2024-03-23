@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_sai143cool_Web_Resume_1711204292515-pr-trigger-input-set
+  identifier: Build_sai143cool_Web_Resume_1711204292515prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: FirstProject
+  pipeline:
+    identifier: Build_sai143cool_Web_Resume_1711204292515
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
